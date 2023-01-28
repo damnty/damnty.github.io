@@ -83,3 +83,440 @@ body {
 #footer .links {
 	margin: 30px 0 0;
 }
+
+/*
+menu ---------------------------------------------------------------------------------------------------------
+*/
+
+#menu {
+	position: relative;
+	width: 1180px;
+	height: 60px;
+	margin: auto;
+	background-color: #FFF;
+	border-bottom: 4px solid #87000D;
+}
+
+#menu .header {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	font-size: 24pt;
+	color: #AAA;
+	cursor: pointer;
+}
+
+#menu .header em {
+	font-style: normal;
+	color: #87000D;
+}
+
+#menu .header:hover {
+	color: #87000D;
+}
+
+#menu .header:hover em {
+	color: #AAA;
+}
+
+#menu .fb {
+	position: absolute;
+	right: 40px;
+	top: 30px;
+}
+
+#menu ul {
+	position:absolute;
+	top: 0;
+	right: 180px;
+	padding: 0;
+}
+
+#menu ul:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+#menu ul li {
+	float: left;
+	list-style-type: none;
+}
+
+#menu ul li a {
+	display: block;
+	width: 120px;
+	height: 30px;
+	padding: 30px 0 0;
+	text-decoration: none;
+	text-align: center;
+	color: #666;
+}
+
+#menu ul li a:hover,
+#menu ul li.active a {
+	color: #000;
+	font-weight: bolder;
+	border-bottom: 4px solid #FFC400;
+}
+
+
+/*
+Navigation ---------------------------------------------------------------------------------------------------
+*/
+
+#left a {
+	display: block;
+	text-decoration: none;
+	color: #444;
+}
+
+#left > ul {
+	margin: 20px 0;
+}
+
+#left ul li {
+	list-style-type: none;
+}
+
+#left > ul > li > a {
+	padding: 3px 0 3px 20px;
+	font-weight: bold;
+	cursor: default;
+}
+
+#left > ul > li > ul a {
+	width: 170px;
+	padding: 3px 10px 3px 20px;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+}
+
+#left li.active a,
+#left > ul > li > ul a:hover {
+	background-color: #FFFDB5;
+	color: #000;
+	border-bottom: 1px solid #E4E4E4;
+	border-top: 1px solid #E4E4E4;
+}
+
+/* ----------------------------------------------------------------------------------------------- CONTENT MASTER FILE */
+
+/* ------------------------------------------------------------------------------ BASIC DEFINITIONS */
+
+/* --------------------------------------------------- TEXT ELEMENTS */
+
+#content {
+	color: #333;
+}
+
+#content h1 {
+	margin: 20px;
+	border: 1px solid #E4E4E4;
+	border-width: 0 0 1px;
+	font-size: 10pt;
+}
+
+#content h2 {
+	margin: 50px 20px 15px 20px;
+	border: 1px solid #E4E4E4;
+	border-width: 0 0 1px;
+	font-size: 10pt;
+}
+
+#content p {
+	margin: 5px 25px;
+	line-height: 16pt;
+}
+
+#content a,
+#footer a {
+	color: #4685DF;
+	text-decoration: none;
+}
+
+/* --------------------------------------------------- TABLE ELEMENTS */
+
+#content table {
+	width: 760px;
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+#content table tr td,
+#content table tr th {
+	border: 1px solid #E4E4E4;
+	padding: 5px 10px;
+}
+
+#content table thead tr {
+	background-color: #FFFDB5;
+	text-align: left;
+}
+
+#content table th {
+	font-weight: normal;
+}
+
+#content table th:empty {
+	background-color: #FFF;
+	padding: 1px;
+}
+
+#content table th em {
+	display: block;
+	font-size: 8pt;
+}
+
+/* --------------------------------------------------- LIST ELEMENTS */
+
+#content ul {
+	margin: 10px 20px 20px 50px;
+}
+
+#content table ul {
+	margin: 0;
+	list-style-type: none;
+}
+
+/* ------------------------------------------------------------------------------ CLASSES */
+
+/* --------------------------------------------------- TABLE CLASSES */
+
+#content table .colored {
+	background-color: #FFFDB5;
+}
+
+#content table .noborder {
+	border: none;
+}
+
+#content table .hidden {
+	border: none;
+	background-color: #FFF;
+}
+
+
+
+/* --------------------------------------------------- LIST CLASSES */
+
+/* -------------------- BILINGUAL LIST */
+
+ul.bi li:nth-of-type(even) {
+	list-style-type: none;
+	font-size: 8pt;
+	font-style: italic;
+}
+
+ul.bi li:nth-of-type(even):not(last-of-child) {
+	margin-bottom: 5px;
+}
+
+
+/* -------------------- HORIZONTAL LIST */
+
+#content .hr li {
+	float: left;
+	margin-right: 50px;
+}
+
+#content .hr i {
+	display: block;
+	font-size: 8pt;
+}
+
+#content ul.hr:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	width: 0;
+}
+
+/* --------------------------------------------------- FORM CLASSES */
+
+#content .search {
+	text-align: center;
+}
+
+#content .search .wrapper {
+	display: inline-block;
+}
+
+#content .search .info {
+	margin: 0 0 10px 0;
+	text-align: left;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+#content .search input {
+	padding: 4px 10px;
+	border: 1px solid #CCC;
+}
+
+#content .search input[type=submit] {
+	cursor: pointer;
+	color: #333;
+}
+
+#content .search input[type=submit]:hover {
+	background-color: #FFFDB5;
+	color: #000;
+}
+
+#content .search .error {
+	display: none;
+	margin: 8px 0;
+	padding: 5px 10px; 
+	background: #87000D; 
+	position: absolute; 
+	border-radius: 3px;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #EFEFEF;
+}
+
+#content .search .error:before { 
+	content:""; 
+	position: absolute; 
+	width: 0; 
+	height: 0;
+	left: 10px;
+	top: -8px;
+	border-left	: 5px solid transparent; 
+	border-right: 5px solid transparent; 
+	border-bottom: 8px solid #87000D;
+}
+
+
+
+/* --------------------------------------------------- SPECIAL CLASSES */
+
+/* -------------------- CHOICES + OPTIONS DIV */
+
+#content .choices {
+	width: 100%;
+	margin: 15px 0 0;
+	text-align: center;
+}
+
+#content .choices ul {
+	display: inline-block;
+	margin: 10px 0 0;
+	border-right: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+}
+
+#content .choices ~ div[data-opt] h1 {
+	margin: 15px 20px 10px;
+}
+
+#content .choices ul li {
+	float: left;
+	min-width: 120px;
+	list-style-type: none;
+	padding: 6px 5px;
+	border-top: 1px solid #E4E4E4;
+	border-left: 1px solid #E4E4E4;
+	cursor: pointer;
+	background-color: #FAFAFA;
+	color: #444;
+}
+
+#content .choices ul li.active,
+#content .choices ul li:hover {
+	background-color: #FFFDB5;
+	color: #000;
+}
+
+#content .choices ul li:active {
+	background-color: #CCC;
+}
+
+#content .choice:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#content div[data-opt] {
+	display: block;
+}
+
+#content div[data-opt] ~ div[data-opt] {
+	display: none;
+}
+
+
+/* ---------------------------------------------------------------------------- ZEITEN */
+
+/* ---------------------------------------------- BIG 3 TABELLE */
+
+#content .big3 th {
+	width: 25%;
+}
+
+#content .big3 td {
+	padding: 0;
+} 
+
+#content .big3 ul {
+	margin: 0;
+}
+
+#content .big3 ul li {
+	padding: 5px 10px;
+}
+
+#content .big3 ul li:not(:last-of-type) {
+	border-bottom: 1px solid #E4E4E4;
+}
+
+/* ---------------------------------------------- IRREGULARS TABELLE */
+
+#content table.irregulars tr td {
+	width: 14.28%;
+	padding: 5px 0;
+	text-align: center;
+}
+
+#content table.irregulars tr.colored td {
+	padding: 10px 30px;
+	background-color: #FFFDB5;
+	vertical-align: middle;
+}
+
+#content table.irregulars ul {
+	list-style-type: none;
+}
+
+/* ---------------------------------------------- TENSE OVERVIEW TABELLE */
+
+#content table.tenseoverview tr th {
+	width: 25%;
+}
+
+/* ---------------------------------------------- COACH LINK */
+
+#content .coachlink {
+	display: block;
+	width: 750px;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+	color: #444;
+	background-color: #FAFAFA;
+	border: 1px solid #E4E4E4;
+}
+
+#content .coachlink:hover {
+	background-color: #FFFDB5;
+	color: #000;
+}
