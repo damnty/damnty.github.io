@@ -1,0 +1,85 @@
+/* 
+    Document   : css
+    Created on : 03.07.2013, 18:12:53
+    Author     : Johannes Thomas
+
+*/
+
+html {
+	overflow-y: scroll;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Segoe UI,Arial,Century Gothic;
+}
+
+root { 
+    display: block;
+}
+
+body {
+	background-color: #FFFDB5;
+	font-size: 10pt;
+}
+
+
+
+#wrapper {
+	width: 1180px;
+	margin: 20px auto;
+	background-color: #FFF;
+	box-shadow: 0 0 5px #CCC;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+
+
+#content {
+	float: left;
+	width: 800px;
+	padding: 0 0 50px 0;
+	min-height: 650px;
+	margin: 0 0 0 -1px;
+	border-left: 1px solid #EFEFEF;
+	border-right: 1px solid #EFEFEF;
+}
+
+
+#left {
+	float: left;
+	width: 200px;
+	border-right: 1px solid #EFEFEF;
+}
+
+#right {
+	float: right;
+	width: 178px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#footer {
+	position: relative;
+	height: 80px;
+	border-top: 1px solid #EFEFEF;
+	text-align: center;
+}
+
+#footer .standards {
+	position: absolute;
+	top: 15px;
+	left: 60px;
+}
+
+#footer .sociallinks {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+
+#footer .links {
+	margin: 30px 0 0;
+}
