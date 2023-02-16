@@ -1,2 +1,2 @@
-# portugues-grammar
-Website Containing Portuguese Grammar
+# PortuGram
+Portugiesische Grammatik einfach erklärt
