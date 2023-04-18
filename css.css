@@ -1,7 +1,12 @@
+/* 
+    Document   : css
+    Created on : 03.07.2013, 18:12:53
+    Author     : Johannes Thomas
+*/
+
 html {
 	overflow-y: scroll;
 }
-
 
 * {
 	margin: 0;
@@ -19,6 +24,18 @@ body {
 }
 
 
+
+#wrapper {
+	width: 1180px;
+	margin: 20px auto;
+	background-color: #FFF;
+	box-shadow: 0 0 5px #CCC;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+
+
 #content {
 	float: left;
 	width: 800px;
@@ -28,6 +45,123 @@ body {
 	border-left: 1px solid #EFEFEF;
 	border-right: 1px solid #EFEFEF;
 }
+
+
+#left {
+	float: left;
+	width: 200px;
+	border-right: 1px solid #EFEFEF;
+}
+
+#right {
+	float: right;
+	width: 178px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#footer {
+	position: relative;
+	height: 80px;
+	border-top: 1px solid #EFEFEF;
+	text-align: center;
+}
+
+#footer .standards {
+	position: absolute;
+	top: 15px;
+	left: 60px;
+}
+
+#footer .sociallinks {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+
+#footer .links {
+	margin: 30px 0 0;
+}
+
+/*
+menu ---------------------------------------------------------------------------------------------------------
+*/
+
+#menu {
+	position: relative;
+	width: 1180px;
+	height: 60px;
+	margin: auto;
+	background-color: #FFF;
+	border-bottom: 4px solid #87000D;
+}
+
+#menu .header {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	font-size: 24pt;
+	color: #AAA;
+	cursor: pointer;
+}
+
+#menu .header em {
+	font-style: normal;
+	color: #87000D;
+}
+
+#menu .header:hover {
+	color: #87000D;
+}
+
+#menu .header:hover em {
+	color: #AAA;
+}
+
+#menu .fb {
+	position: absolute;
+	right: 40px;
+	top: 30px;
+}
+
+#menu ul {
+	position:absolute;
+	top: 0;
+	right: 180px;
+	padding: 0;
+}
+
+#menu ul:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+#menu ul li {
+	float: left;
+	list-style-type: none;
+}
+
+#menu ul li a {
+	display: block;
+	width: 120px;
+	height: 30px;
+	padding: 30px 0 0;
+	text-decoration: none;
+	text-align: center;
+	color: #666;
+}
+
+#menu ul li a:hover,
+#menu ul li.active a {
+	color: #000;
+	font-weight: bolder;
+	border-bottom: 4px solid #FFC400;
+}
+
 
 /*
 Navigation ---------------------------------------------------------------------------------------------------
@@ -385,3 +519,4 @@ ul.bi li:nth-of-type(even):not(last-of-child) {
 	background-color: #FFFDB5;
 	color: #000;
 }
+
