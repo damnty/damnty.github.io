@@ -231,12 +231,6 @@ Navigation ---------------------------------------------------------------------
 	border: 1px solid #E4E4E4;
 	border-width: 0 0 1px;
 	font-size: 10pt;
-	display: block;
-    	font-size: 1.5em;
-    	margin-block-start: 0.83em;
-    	margin-block-end: 0.83em;
-    	margin-inline-start: 0px;
-    	margin-inline-end: 0px;
 }
 
 #content p {
