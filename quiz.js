@@ -1,3 +1,7 @@
+// Prepare page
+const quizspace = document.getElementById('quizspace');
+quizspace.style.display.none;
+
 //WORD CLASSES ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 class Nouns {
@@ -199,10 +203,19 @@ function checkAnswer(answer, solution) {
 
 // Gameplay      -----------------------------------------------------------------------------------------------------------------------------
 function chooseCategory() {
-    const chosenCategory = prompt("Choose a category: " + categories.join(", "));
+    const chosenCategory = prompt("Wähle Wortarten: " + categories.join(", "));
     
     if (!categories.includes(chosenCategory)) {
       alert("Invalid category! Please choose from: " + categories.join(", "));
+      chooseCategory();
+      return;
+    }
+
+    const languages = ["Deutsch", "Portugiesisch", "Spanisch", "Galicisch"];
+    const chosenLanguages = prompt("Wähle Sprachen: " + categories.join(", "));
+
+    if (!categories.includes(chosenLanguages)) {
+      alert("Invalid category! Please choose from: " + languages.join(", "));
       chooseCategory();
       return;
     }
@@ -213,5 +226,16 @@ function chooseCategory() {
       chooseCategory();
       return;
     }
+    const setQuizButton = document.getElementById('quizfestlegen');
+    setQuizButton.style.display.none;
+
+    const quizspace = document.getElementById('quizspace');
+    quizspace.style.display.none;
 }
+
+
+
+
+
+
 
